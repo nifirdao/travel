@@ -1,3 +1,8 @@
+<?php
+
+ define("APPURL", "http://localhost/travel");
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,13 +16,13 @@
     <title>WoOx Travel Bootstrap 5 Theme</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?php echo APPURL; ?>/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/templatemo-woox-travel.css">
-    <link rel="stylesheet" href="assets/css/owl.css">
-    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="<?php echo APPURL; ?>/assets/css/fontawesome.css">
+    <link rel="stylesheet" href="<?php echo APPURL; ?>/assets/css/templatemo-woox-travel.css">
+    <link rel="stylesheet" href="<?php echo APPURL; ?>/assets/css/owl.css">
+    <link rel="stylesheet" href="<?php echo APPURL; ?>/assets/css/animate.css">
     <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 <!--
 
@@ -60,8 +65,8 @@ https://templatemo.com/tm-580-woox-travel
                         <li><a href="index.html" class="active">Home</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="deals.html">Deals</a></li>
-                        <li><a href="login.html">Login</a></li>
-                        <li><a href="register.php">Register</a></li>
+                        <li><a href="<?php echo APPURL; ?>/auth/login.php">Login</a></li>
+                        <li><a href="<?php echo APPURL; ?>/auth/register.php">Register</a></li>
                     </ul>   
                     <a class='menu-trigger'>
                         <span>Menu</span>
