@@ -47,17 +47,25 @@
 
               <div class="col-md-12">
                   <fieldset>
-                      <label for="Name" class="form-label">Your Email</label>
+                      <label for="Name" class="form-label">Email</label>
                       <input type="text" name="email" class="email" placeholder="email" autocomplete="on" required>
                   </fieldset>
               </div>
            
               <div class="col-md-12">
                 <fieldset>
-                    <label for="Name" class="form-label">Your Password</label>
+                    <label for="Name" class="form-label">Password</label>
                     <input type="password" name="password" class="password" placeholder="password" autocomplete="on" required>
                 </fieldset>
               </div>
+
+              <div class="col-md-12">
+                <fieldset>
+                    <label for="Number" class="form-label">Birthdate</label>
+                    <input type="date" name="date" class="date" placeholder="date" autocomplete="on" required>
+                </fieldset>
+              </div>
+
               <div class="col-lg-12">                        
                   <fieldset>
                       <button type="submit" name="submit" class="main-button">register</button>
