@@ -3,7 +3,9 @@
 <?php
 
 
-
+  if(isset($_SESSION["username"])) {
+    header("location: ".APPURL."");
+  }
   //take the data from the inputs
 
   if(isset($_POST['submit'])) {

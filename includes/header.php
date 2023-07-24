@@ -58,7 +58,7 @@ https://templatemo.com/tm-580-woox-travel
                 <nav class="main-nav">
                     <!-- ***** Logo Start ***** -->
                     <a href="index.html" class="logo">
-                        <img src="assets/images/logo.png" alt="">
+                        <img src="assets/images/logos.png" alt="" width="150" height="50">
                     </a>
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Menu Start ***** -->
@@ -66,20 +66,22 @@ https://templatemo.com/tm-580-woox-travel
                       <li><a href="index.html" class="active">Home</a></li>
                       <li><a href="about.html">About</a></li>
                       <li><a href="deals.html">Deals</a></li>
-                        
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <?php echo $_SESSION['username']; ?>
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="logout.php">logout</a></li>
-                        </ul>
-                      </li>
-                      <!--<li><a href="<?php echo APPURL; ?>/auth/login.php">Login</a></!--li>
-                      <li><a href="<?php echo APPURL; ?>/auth/register.php">Register</a></li> -->
+                      <?php if(isset($_SESSION['username'])) :?> 
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <?php echo $_SESSION['username']; ?>
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item text-black" href="#">Action</a></li>
+                            <li><a class="dropdown-item text-black" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item text-black" href="<?php echo APPURL; ?>/auth/logout.php">logout</a></li>
+                          </ul>
+                        </li>
+                      <?php else : ?>  
+                        <li><a href="<?php echo APPURL; ?>/auth/login.php">Login</a></li>
+                        <li><a href="<?php echo APPURL; ?>/auth/register.php">Register</a></li> 
+                      <?php endif; ?>
                     </ul>   
                     <a class='menu-trigger'>
                         <span>Menu</span>

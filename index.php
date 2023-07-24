@@ -11,8 +11,8 @@
         <div id="top-banner-1" class="banner">
           <div class="banner-inner-wrapper header-text">
             <div class="main-caption">
-              <h2>Take a Glimpse Into The Beautiful Country Of:</h2>
-              <h1>Caribbean</h1>
+              <h2>Take a Glimpse Into The Beautiful Province Of:</h2>
+              <h1>YALA</h1>
               <div class="border-button"><a href="about.html">Go There</a></div>
             </div>
             <div class="container">
